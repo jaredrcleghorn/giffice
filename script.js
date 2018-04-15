@@ -29,7 +29,9 @@ function getGif() {
 
 getGif(); // get the initial gif
 
-var newGifButton = document.getElementById('new-gif-button');
+var newGifButton = document.getElementById('new-gif-button'); // get the button that changes the GIF
+
+// change the GIF when the user clicks the button
 newGifButton.addEventListener('click', function() {
 	gif.className = "display-none";
 	getGif();
