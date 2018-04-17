@@ -11,8 +11,12 @@ getGifRequest.onload = function() {
 		var response = JSON.parse(getGifRequest.responseText); // convert the retunred JSON data to an object
 		var gifUrl = response.data.images.fixed_height.url; // get the URL of the gif
 
-		gif.setAttribute("src", gifUrl);
-		gif.className = ""; // show the GIF
+		gif.setAttribute("src", gifUrl); // update the GIF
+
+		// show the GIF when it's done loading
+		gif.addEventListener("load", function() {
+			gif.className = "";
+		}, false);
 	}
 }
 
