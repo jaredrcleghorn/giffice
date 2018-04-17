@@ -1,7 +1,26 @@
 body {
 	text-align: center;
+	font-family: sans-serif;
+}
+
+h1 {
+	font-weight: 400;
+}
+
+#gif {
+	border: 3px solid #000;
 }
 
 .display-none {
 	display: none;
+}
+
+button {
+	padding: 10px;
+	cursor: pointer;
+}
+
+footer {
+	font-size: 0.75em;
+	margin-top: 30px;
 }
