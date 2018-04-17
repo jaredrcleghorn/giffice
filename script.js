@@ -21,7 +21,7 @@ function getGif() {
 
 	// prepare the request
 	getGifRequest.open('GET',
-										 'https://api.giphy.com/v1/gifs/random?api_key=1ky79YywpO2i1aiQoH0CST27dVeDQFzS&tag=the office&fmt=json',
+										 'https://api.giphy.com/v1/gifs/random?api_key=1ky79YywpO2i1aiQoH0CST27dVeDQFzS&tag=the+office&fmt=json',
 										 true);
 
 	getGifRequest.send(); // send the request
